@@ -8,6 +8,18 @@ Como BD para el Login de usuarios se utlizo MongoDB (cloud free version)
 
 [https://www.mongodb.com/try](https://www.mongodb.com/try)
 
+El proyecto lee 2 API's para mostrar el contenido en la aplicación
+
+[https://www.indecon.online/last](https://www.indecon.online/last)
+
+[http://hn.algolia.com/api/v1/search?tags=front_page](http://hn.algolia.com/api/v1/search?tags=front_page)
+
+El Backend también expone un API para autenticar la aplicación.
+
+```
+POST localhost:3000/login
+
+```
 
 ## Como usar el proyecto
 
@@ -41,3 +53,12 @@ Frontend: docker run -p 4200:4200 -it slackwero/bice-frontend:latest
 Y eso es todo!
 
 Abrir en el explorador la URL`http://localhost:4200/`
+
+## Otros proyectos relacionados al Test
+
+[https://github.com/slackwero/bice-backend](https://github.com/slackwero/bice-backend)
+
+[https://github.com/slackwero/bice-api-indecon](https://github.com/slackwero/bice-api-indecon)
+
+[https://github.com/slackwero/bice-api-hackernews](https://github.com/slackwero/bice-api-hackernews)
+
