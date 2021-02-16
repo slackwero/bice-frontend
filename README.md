@@ -53,6 +53,12 @@ Frontend: docker run -p 4200:4200 -it slackwero/bice-frontend:latest
 Y eso es todo!
 
 Abrir en el explorador la URL`http://localhost:4200/`
+```
+User: alex@gmail.com
+```
+```
+Password: 123456
+```
 
 ## Otros proyectos relacionados al Test
 
