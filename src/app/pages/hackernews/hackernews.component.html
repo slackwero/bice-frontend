@@ -1,0 +1,43 @@
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Hacker News API</h4>
+        <h6 class="card-subtitle">Feed from <a target="blank"
+                href="https://hn.algolia.com/api/v1/search?tags=front_page">https://hn.algolia.com/ (Lastest News)</a></h6>
+        <div class="container-fluid border" style="font-weight: bolder;">
+            <div class="row">
+                <div class="col-sm bg-info text-white p-2">
+                    Titulo
+                </div>
+                <div class="col-sm bg-info text-white p-2">
+                    Autor
+                </div>
+                <div class="col-sm bg-info text-white p-2">
+                    Fecha
+                </div>
+                <div class="col-sm bg-info text-white p-2">
+                    Cant. Comentarios
+                </div>
+                <div class="col-sm bg-info text-white p-2">
+                    Link
+                </div>
+            </div>
+            <div class="row" *ngFor="let noticias of feed">
+                <div class="col-sm text-dark p-2">
+                    {{ noticias[1].title }}
+                </div>
+                <div class="col-sm text-dark p-2">
+                    {{ noticias[1].author }}
+                </div>
+                <div class="col-sm text-dark p-2">
+                    {{ noticias[1].date }}
+                </div>
+                <div class="col-sm text-dark p-2">
+                    {{ noticias[1].num_comments }}
+                </div>
+                <div class="col-sm text-dark p-2">
+                    <a target="blank" href="{{ noticias[1].url }}">Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

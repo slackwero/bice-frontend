@@ -1,0 +1,43 @@
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Indecon Online API</h4>
+        <h6 class="card-subtitle">Feed from <a target="blank"
+                href="https://www.indecon.online/last">https://www.indecon.online</a></h6>
+        <div class="container-fluid border" style="font-weight: bolder;">
+            <div class="row">
+                <div class="col-sm bg-info text-white p-2">
+                    Rubro
+                </div>
+                <div class="col-sm bg-info text-white p-2">
+                    Descripción
+                </div>
+                <div class="col-sm bg-info text-white p-2">
+                    Unidad
+                </div>
+                <div class="col-sm bg-info text-white p-2">
+                    Fecha
+                </div>
+                <div class="col-sm bg-info text-white p-2">
+                    Valor
+                </div>
+            </div>
+            <div class="row" *ngFor="let rubro of feed">
+                <div class="col-sm text-dark p-2">
+                    {{ rubro[1].key }}
+                </div>
+                <div class="col-sm text-dark p-2">
+                    {{ rubro[1].name }}
+                </div>
+                <div class="col-sm text-dark p-2">
+                    {{ rubro[1].unit }}
+                </div>
+                <div class="col-sm text-dark p-2">
+                    {{ rubro[1].date }}
+                </div>
+                <div class="col-sm text-dark p-2">
+                    {{ rubro[1].value }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
