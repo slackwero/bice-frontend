@@ -15,9 +15,9 @@ Para utilizar este proyecto debe instalar el Backend (1 proy.) y las API's (2 pr
 
 Todo los proyectos estan dokerizados y publicos en Docker Hub, por lo que solo necesita descargar las imagenes y ejecutar el comando docker run con cada una de ellas.
 
-## Instrucciones de configuración y ejecución del proyecto
+### Instrucciones de configuración y ejecución del proyecto
 
-## Pre-requisitos
+### Pre-requisitos
 
 [https://docs.docker.com/engine/](https://docs.docker.com/engine/)
 
